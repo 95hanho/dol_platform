@@ -1,0 +1,72 @@
+// 태블릿용 -------------------------------------------------------------
+@media all and (min-width: 768px) {
+  #wrap {
+    #header.login-on {
+      font-size: 25px;
+      .searchspace {
+        display: block;
+        padding: 0 15px 10px 15px;
+        text-align: center;
+        .searchDiv {
+          position: relative;
+          input {
+            width: calc(100% - 100px);
+            border-style: none;
+            background: #a6a6a6;
+            color: #fff;
+            font-size: 20px;
+            padding: 9px 15px 9px 50px;
+            border-radius: 14.1px;
+            &:focus {
+              background-color: #fff;
+              color: #000;
+            }
+          }
+          button {
+            border-style: none;
+            font-size: 20px;
+            width: 80px;
+            height: 45px;
+            border-radius: 11.4px;
+            margin-left: 15px;
+            background: #555;
+            color: #fff;
+            cursor: pointer;
+          }
+          span {
+            position: absolute;
+            top: 10px;
+            left: 9.1px;
+            font-size: 30px;
+            color: #75777a;
+          }
+        }
+      }
+    }
+    main {
+      padding-top: 135px;
+    }
+    main#mainPage {
+      section.tight-schedule,
+      section.timeLine-dol {
+        width: 50%;
+      }
+    }
+    main#login-main section.login-section .differLink a {
+      font-size: 20px;
+    }
+    main#login-main.myPage-change {
+      padding-top: 140px;
+    }
+    main#dolRegist {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      form {
+        width: 500px;
+        margin: 15px;
+        border: 1px solid rgb(214, 214, 214);
+      }
+    }
+  }
+}

@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+html,
+body,
+#root {
+    width: 100%;
+    height: 100%;
+    background-color: #e9e9e9;
+}
+body {
+    font: normal 1rem/1.5 "Noto Sans KR", "Nanum Gothic", "Noto Serif KR",
+        "Nanum Pen Script", "Roboto";
+    color: rgba(0, 0, 0, 0.85);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Nanum Gothic", "Noto Serif KR", "Nanum Pen Script",
+        "Noto Sans KR", "Roboto";
+}
+strong,
+b {
+    line-height: 1;
+}
+ul,
+li {
+    list-style: none;
+}
+a {
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.85);
+    text-decoration: none;
+}
+/* 투명버튼 접근성 고려한 클래스이름 블라인드 */
+.blind {
+    display: block;
+    text-indent: -2000px;
+    overflow: hidden;
+}
+header,
+main,
+footer,
+section,
+nav,
+aside {
+    display: block;
+}
+.hide {
+    display: none !important;
+}
+button {
+    border: 0 none;
+    cursor: pointer;
+    background-color: transparent;
+}
+/* 스크롤 */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(91, 90, 255);
+}
+::-webkit-scrollbar-track {
+    background-color: #eaeaea;
+    border-left: 1px solid #ccc;
+}
+
+img {
+    border-style: none;
+    max-width: 100%;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+    user-select: none;
+    /*  */
+    /* -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none; */
+}
+.c_red {
+    color: red;
+}
+.c_green {
+    color: green;
+}
+.c_blue {
+    color: blue;
+}
+.c_gray {
+    color: gray;
+}
+.c_darkgray {
+    color: darkgray;
+}
+.f_bold {
+    font-weight: bold;
+}
+.align_right {
+    text-align: right;
+}
+.align_center {
+    text-align: center;
+}
+.read-only {
+    background-color: cornsilk;
+    border: 1px solid black;
+}

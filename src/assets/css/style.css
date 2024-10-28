@@ -1,0 +1,1673 @@
+@charset "UTF-8";
+/* 모바일용 */
+#wrap {
+  width: 100%;
+  height: 100%;
+  min-width: 375px;
+  margin: 0 auto;
+  position: relative;
+}
+#wrap #header {
+  min-width: 375px;
+  min-height: 52.9px;
+  padding: 10px 0 10px 0;
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  z-index: 10;
+  text-align: center;
+  font-size: 20px;
+  left: 0;
+  top: 0;
+}
+#wrap #header .title {
+  padding: 5px 0 10px 0;
+}
+#wrap #header .title span {
+  padding-right: 20px;
+}
+@media all and (min-width: 400px) {
+  #wrap #header .title span {
+    padding-right: 0;
+  }
+}
+#wrap #header .btn_menu {
+  display: inline-block;
+  outline: none;
+  border: 0 none;
+  background: none;
+  position: relative;
+  z-index: 11;
+  width: 55px;
+  height: 100%;
+  padding: 0 10px;
+  cursor: pointer;
+}
+#wrap #header .btn_menu .home {
+  font-size: 30px;
+}
+#wrap #header .btn_menu .sr_only {
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+#wrap #header .btn_menu .bar_1,
+#wrap #header .btn_menu .bar_2 {
+  margin-bottom: 7px;
+}
+#wrap #header .btn_menu .bar_1,
+#wrap #header .btn_menu .bar_2,
+#wrap #header .btn_menu .bar_3 {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #394c72;
+  transition: all 0.25s ease-in-out;
+}
+#wrap #header .headLeft {
+  position: absolute;
+  display: inline-block;
+  left: 5px;
+  top: 10px;
+}
+#wrap #header .headLeft h2 {
+  width: 100%;
+  font-size: 25px;
+}
+#wrap #header .headRight {
+  position: absolute;
+  display: inline-block;
+  right: 0;
+  top: 10px;
+}
+#wrap #header .headRight button {
+  padding: 10px 20px 10px 10px;
+}
+#wrap #header a span {
+  font-size: 40px;
+}
+#wrap #header .searchspace .hashTag {
+  width: 100%;
+  text-align: left;
+  padding-top: 5px;
+}
+#wrap #header .searchspace .hashTag a {
+  display: inline-block;
+  background: #fff;
+  padding: 5px 10px;
+  border-radius: 15px;
+  margin-right: 5px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  background-color: #cacaca;
+  font-size: 16px;
+}
+#wrap #header .searchspace,
+#wrap #header .searchspace .hashTag {
+  display: none;
+}
+#wrap nav#main-menu {
+  min-width: 375px;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  min-width: 375px;
+  z-index: 20;
+  background: #fff;
+  left: 100%;
+  transition: all 0.3s ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+#wrap nav#main-menu header {
+  background: #cacaca;
+}
+#wrap nav#main-menu header .close-space {
+  width: 100%;
+  position: relative;
+  text-align: right;
+}
+#wrap nav#main-menu header .close-space .btn_menu {
+  display: inline-block;
+  padding: 25px;
+  cursor: pointer;
+}
+#wrap nav#main-menu header .close-space .btn_menu .bar_1,
+#wrap nav#main-menu header .close-space .btn_menu .bar_2 {
+  display: block;
+  width: 28px;
+  height: 2px;
+  border-radius: 4px;
+  background: #323232;
+}
+#wrap nav#main-menu header .close-space .btn_menu .bar_1 {
+  transform: translatey(9px) rotate(-45deg);
+  margin-bottom: 16px;
+}
+#wrap nav#main-menu header .close-space .btn_menu .bar_2 {
+  transform: translatey(-9px) rotate(45deg);
+}
+#wrap nav#main-menu header .searchspace {
+  border-top: 1px solid black;
+  padding: 15px;
+  text-align: center;
+}
+#wrap nav#main-menu header .searchspace .searchDiv {
+  position: relative;
+}
+#wrap nav#main-menu header .searchspace .searchDiv input {
+  width: calc(100% - 100px);
+  border-style: none;
+  background: #a6a6a6;
+  color: #fff;
+  font-size: 20px;
+  padding: 15px 20px 15px 50px;
+  border-radius: 14.1px;
+}
+#wrap nav#main-menu header .searchspace .searchDiv input:focus {
+  background-color: #fff;
+  color: #000;
+}
+#wrap nav#main-menu header .searchspace .searchDiv button {
+  border-style: none;
+  font-size: 20px;
+  width: 80px;
+  height: 50px;
+  border-radius: 11.4px;
+  margin-left: 15px;
+  background: #555;
+  color: #fff;
+  cursor: pointer;
+}
+#wrap nav#main-menu header .searchspace .searchDiv span {
+  position: absolute;
+  top: 10px;
+  left: 9.1px;
+  font-size: 30px;
+  color: #75777a;
+}
+#wrap nav#main-menu header .searchspace .hashTag {
+  width: 100%;
+  text-align: left;
+  padding-top: 15px;
+}
+#wrap nav#main-menu header .searchspace .hashTag a {
+  display: inline-block;
+  background: #fff;
+  padding: 5px 10px;
+  border-radius: 15px;
+  margin-right: 5px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+#wrap nav#main-menu section {
+  display: flex;
+}
+#wrap nav#main-menu section aside {
+  width: 180px;
+  padding-top: 20px;
+  position: relative;
+}
+#wrap nav#main-menu section aside ul {
+  text-align: left;
+}
+#wrap nav#main-menu section aside ul li {
+  width: 100%;
+  padding: 0 20px;
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: 600;
+}
+#wrap nav#main-menu section aside ul li a.active {
+  color: rgb(40, 55, 255);
+}
+#wrap nav#main-menu section article {
+  width: calc(100% - 180px);
+  padding-top: 20px;
+  overflow: scroll;
+}
+#wrap nav#main-menu section article h2 {
+  font-size: 30px;
+  border-bottom: 1px solid black;
+}
+#wrap nav#main-menu section article h2 span {
+  display: none;
+  font-size: 40px;
+}
+#wrap nav#main-menu section article ul li {
+  font-size: 22px;
+  padding: 10px 10px;
+  border-bottom: 0.1px solid #666;
+  position: relative;
+}
+#wrap nav#main-menu section .module-btn {
+  position: absolute;
+  bottom: 0;
+  padding: 0 0 15px 15px;
+}
+#wrap nav#main-menu section .module-btn a {
+  display: block;
+  width: 170px;
+  height: 42px;
+}
+#wrap nav#main-menu section .module-btn a span {
+  font-size: 40px;
+}
+#wrap nav#main-menu section .module-btn a .logout {
+  font-size: 20px;
+}
+#wrap.menu_on {
+  overflow: hidden;
+}
+#wrap.menu_on nav#main-menu {
+  left: 0;
+}
+#wrap main {
+  width: 100%;
+  min-height: calc(100% - 216.56px);
+  padding-top: 70px;
+}
+#wrap main#mainPage {
+  display: flex;
+  flex-wrap: wrap;
+}
+#wrap main#mainPage header.mainHead {
+  width: 100%;
+  text-align: center;
+  background: url("../images/sub_bnr6.jpg");
+  color: #fff;
+}
+#wrap main#mainPage header.mainHead h3,
+#wrap main#mainPage header.mainHead h2,
+#wrap main#mainPage header.mainHead p {
+  width: 100%;
+}
+#wrap main#mainPage header.mainHead h3 {
+  padding-top: 30px;
+  font-size: 45px;
+  font-weight: 800;
+}
+#wrap main#mainPage header.mainHead h2 {
+  font-size: 60px;
+  font-weight: 1000;
+}
+#wrap main#mainPage header.mainHead p {
+  padding: 20px 50px;
+}
+#wrap main#mainPage section {
+  width: 100%;
+  padding: 0 20px;
+}
+#wrap main#mainPage section h2 {
+  padding: 15px 0;
+}
+#wrap main#mainPage section.tight-schedule ul {
+  max-height: 335px;
+  overflow: auto;
+}
+#wrap main#mainPage section.tight-schedule ul li {
+  padding: 5px 15px 5px 15px;
+  margin-bottom: 5px;
+  border-radius: 7px;
+}
+#wrap main#mainPage section.tight-schedule ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#wrap main#mainPage section.tight-schedule ul li .meetInfo {
+  display: inline-block;
+  width: calc(100% - 130px);
+}
+#wrap main#mainPage section.tight-schedule ul li .meetInfo h3,
+#wrap main#mainPage section.tight-schedule ul li .meetInfo p {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#wrap main#mainPage section.tight-schedule ul li .dday {
+  display: inline-block;
+  width: 130px;
+  font-size: 30px;
+  color: red;
+  text-align: right;
+}
+#wrap main#mainPage section.tight-schedule ul li.dday1 {
+  background-color: rgba(255, 0, 0, 0.4);
+}
+#wrap main#mainPage section.tight-schedule ul li.dday2 {
+  background-color: rgba(255, 187, 0, 0.4);
+}
+#wrap main#mainPage section.tight-schedule ul li.dday3 {
+  background-color: rgba(29, 219, 22, 0.4);
+}
+#wrap main#mainPage section.tight-schedule .add-btn {
+  width: 100%;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+}
+#wrap main#mainPage section.tight-schedule .add-btn:hover {
+  background-color: #aaa;
+}
+#wrap main#mainPage section.timeLine-dol ul {
+  max-height: 300px;
+  overflow: auto;
+}
+#wrap main#mainPage section.timeLine-dol ul li {
+  background-color: skyblue;
+  margin-bottom: 5px;
+  border-radius: 15px;
+}
+#wrap main#mainPage section.timeLine-dol ul li a .timeLine-img {
+  display: inline-block;
+  padding: 10px;
+}
+#wrap main#mainPage section.timeLine-dol ul li a .timeLine-img img {
+  width: 50px;
+  height: 50px;
+}
+#wrap main#mainPage section.timeLine-dol ul li a .timeLine-cont {
+  display: inline-block;
+  width: calc(100% - 70px);
+  padding-right: 20px;
+}
+#wrap main#mainPage section.timeLine-dol ul li a .timeLine-cont h3,
+#wrap main#mainPage section.timeLine-dol ul li a .timeLine-cont p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+#wrap main#mainPage section.timeLine-dol .add-btn {
+  width: 100%;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+}
+#wrap main#mainPage section.timeLine-dol .add-btn:hover {
+  background-color: #aaa;
+}
+#wrap main#mainPage section.recomd > div#mainRecommend {
+  margin: 0 20px;
+}
+#wrap main#mainPage section.recomd > div#mainRecommend ul .swiper {
+  padding-bottom: 30px;
+}
+#wrap main#mainPage section.recomd > div#mainRecommend ul .swiper li .dol-cont h3 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#wrap main#mainPage section.recomd > div#mainRecommend ul .swiper li .dol-cont h4 {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: keep-all;
+}
+#wrap main#login-main {
+  width: 100%;
+  padding: 0;
+  min-height: calc(100% - 216.25px);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#wrap main#login-main.join-main {
+  width: 100%;
+  display: block;
+  height: auto;
+  padding: 70px 0 20px 0;
+}
+#wrap main#login-main .login-wrap {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+#wrap main#login-main.myPage-change {
+  padding-top: 70px;
+}
+#wrap main#login-main.myPage-change .myPage-wrap {
+  padding: 20px;
+  border: 1px solid gray;
+}
+#wrap main#login-main header.login-header {
+  width: 100%;
+  padding: 0 30px;
+}
+#wrap main#login-main header.login-header h1 {
+  text-align: center;
+  padding: 20% 0;
+}
+#wrap main#login-main section.login-section {
+  width: 100%;
+  padding: 0 30px;
+}
+#wrap main#login-main section.login-section .inputdiv {
+  position: relative;
+  width: 100%;
+  padding: 10px 0;
+}
+#wrap main#login-main section.login-section .inputdiv input {
+  width: 100%;
+  padding: 15px 30px 15px 15px;
+  font-size: 20px;
+}
+#wrap main#login-main section.login-section .inputdiv .clear-btn {
+  position: absolute;
+  font-size: 25px;
+  right: 10px;
+  top: 19.9px;
+  border-style: none;
+  cursor: pointer;
+  background: none;
+}
+#wrap main#login-main section.login-section .inputdiv .btn-exist-left {
+  display: inline-block;
+  position: relative;
+  width: calc(100% - 100px);
+  padding-right: 10px;
+}
+#wrap main#login-main section.login-section .inputdiv .btn-exist-left .clear-btn {
+  top: 15px;
+  right: 20px;
+}
+#wrap main#login-main section.login-section .inputdiv .btn-exist-left .timer {
+  position: absolute;
+  right: 20px;
+  top: 13.1px;
+  color: red;
+}
+#wrap main#login-main section.login-section .inputdiv .btn-exist-right {
+  display: inline-block;
+  height: 100%;
+}
+#wrap main#login-main section.login-section .inputdiv .btn-exist-right button {
+  height: 57px;
+  width: 100px;
+  padding: 0 10px;
+  background: #4b4b4b;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 42px;
+}
+#wrap main#login-main section.login-section .inputdiv select {
+  height: 57px;
+  font-size: 25px;
+  text-align: center;
+}
+#wrap main#login-main section.login-section .inputdiv select.birthYear {
+  width: 50%;
+}
+#wrap main#login-main section.login-section .inputdiv select.birthMD {
+  width: 25%;
+}
+#wrap main#login-main section.login-section .inputdiv.gender-div {
+  height: 80px;
+}
+#wrap main#login-main section.login-section .inputdiv .gender-btn {
+  width: calc(50% - 6px);
+  height: 57px;
+  font-size: 25px;
+  box-shadow: 1px 1px 1px black;
+  transition-duration: 0.5s;
+  border: 1px solid black;
+}
+#wrap main#login-main section.login-section .inputdiv .gender-btn.active {
+  margin-left: 2px;
+  margin-top: 2px;
+  box-shadow: none;
+  background-color: #e1e1e1;
+}
+#wrap main#login-main section.login-section .inputdiv .gender-btn:first-child {
+  margin-right: 10px;
+}
+#wrap main#login-main section.login-section .inputdiv .email-id {
+  width: calc(50% - 64px);
+  height: 55px;
+  font-size: 15px;
+}
+#wrap main#login-main section.login-section .inputdiv .email-id:last-of-type {
+  margin-right: 5px;
+}
+#wrap main#login-main section.login-section .inputdiv span {
+  font-size: 20px;
+}
+#wrap main#login-main section.login-section .inputdiv .empty {
+  display: inline-block;
+  width: calc(100% - 124px);
+}
+#wrap main#login-main section.login-section .inputdiv.email-domain {
+  display: flex;
+  justify-content: right;
+  padding: 1px 0 0px 0;
+}
+#wrap main#login-main section.login-section .inputdiv.email-domain .domain-pick {
+  font-size: 20px;
+}
+#wrap main#login-main section.login-section .inputdiv .phone-txt {
+  width: calc(37.5% - 6.95px);
+}
+#wrap main#login-main section.login-section .inputdiv .phone-txt:first-child {
+  width: 25%;
+}
+#wrap main#login-main section.login-section .inputdiv .info-id {
+  font-size: 20px;
+}
+#wrap main#login-main section.login-section .inputdiv .dept {
+  width: calc(50% - 5px);
+}
+#wrap main#login-main section.login-section .inputdiv .dept:nth-child(1) {
+  margin-right: 10px;
+}
+#wrap main#login-main section.login-section .loginBtn {
+  width: 100%;
+  margin: 20px 0;
+  padding: 10px;
+  font-size: 20px;
+  background: #333;
+  color: #fff;
+  border-radius: 5px;
+}
+#wrap main#login-main section.login-section .differLink {
+  width: 100%;
+  text-align: center;
+}
+#wrap main#login-main section.login-section .differLink a {
+  font-size: 17px;
+  font-weight: bold;
+  padding: 0 10px;
+}
+#wrap main#dolRegist form h2 {
+  padding: 0 20px;
+}
+#wrap main#dolRegist form > p {
+  padding: 0 20px;
+}
+#wrap main#dolRegist form section.title-space input,
+#wrap main#dolRegist form section.title-space textarea {
+  display: block;
+  width: 100%;
+  border: none;
+  font-size: 25px;
+  padding: 20px 20px 10px 20px;
+}
+#wrap main#dolRegist form section.title-space input::-moz-placeholder, #wrap main#dolRegist form section.title-space textarea::-moz-placeholder {
+  color: #cacaca;
+}
+#wrap main#dolRegist form section.title-space input::placeholder,
+#wrap main#dolRegist form section.title-space textarea::placeholder {
+  color: #cacaca;
+}
+#wrap main#dolRegist form section.title-space textarea {
+  font-size: 20px;
+  resize: none;
+}
+#wrap main#dolRegist form section.title-space p {
+  padding: 10px 20px;
+}
+#wrap main#dolRegist form section.title-space .tag-result {
+  display: block;
+  padding: 0px 20px 10px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: blue;
+  height: 76px;
+  width: 100%;
+  text-align: left;
+  background: #fff;
+  cursor: text;
+}
+#wrap main#dolRegist form section.title-space .tag-result font {
+  text-decoration: underline;
+}
+#wrap main#dolRegist form section.title-space .tag-result span {
+  display: inline-block;
+  width: 11.4px;
+}
+#wrap main#dolRegist form section.file-space {
+  width: 100%;
+  border-top: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 10px;
+}
+#wrap main#dolRegist form section.file-space div {
+  width: 50%;
+  text-align: center;
+}
+#wrap main#dolRegist form section.file-space div label {
+  cursor: pointer;
+  font-size: 20px;
+}
+#wrap main#dolRegist form section.file-space div .inFile {
+  display: none;
+}
+#wrap main#dolRegist form section.file-space div .preview {
+  width: 100%;
+  margin-top: 10px;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+#wrap main#dolRegist form section.file-space div .intro-file {
+  width: 100%;
+  padding: 10px 0 10px 20px;
+  padding-top: 10px;
+  text-align: left;
+}
+#wrap main#dolRegist form section.file-space div .intro-file ul {
+  max-height: 250px;
+  overflow: auto;
+}
+#wrap main#dolRegist form section.file-space div .intro-file ul li {
+  width: 100%;
+  height: 27px;
+  white-space: nowrap;
+}
+#wrap main#dolRegist form section.file-space div .intro-file ul li a {
+  text-overflow: ellipsis;
+  display: inline-block;
+  overflow: hidden;
+  width: 100%;
+}
+#wrap main#dolRegist form section.file-space div .intro-file ul li a.fileview {
+  width: calc(100% - 50px);
+}
+#wrap main#dolRegist form section.file-space div .intro-file ul li a.delete {
+  padding-left: 10px;
+  color: darkgray;
+  width: auto;
+}
+#wrap main#dolRegist form section.file-space div .intro-file ul li a.cancel {
+  padding-left: 10px;
+  color: red;
+  width: auto;
+}
+#wrap main#dolRegist form section.detail-space {
+  border-top: 1px solid black;
+}
+#wrap main#dolRegist form section.detail-space > div {
+  display: flex;
+  flex-wrap: wrap;
+  height: 50px;
+}
+#wrap main#dolRegist form section.detail-space > div > span {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 50px;
+  padding: 0 0 0 10px;
+}
+#wrap main#dolRegist form section.detail-space > div > input,
+#wrap main#dolRegist form section.detail-space > div select {
+  border: none;
+  font-size: 20px;
+  padding: 0 20px 0 20px;
+}
+#wrap main#dolRegist form section.detail-space > div select {
+  font-weight: 400;
+  font-family: "Noto Sans KR";
+}
+#wrap main#dolRegist form section.detail-space > div .cate-span {
+  width: 100px;
+}
+#wrap main#dolRegist form section.detail-space > div .cate-select {
+  width: calc(100% - 100px);
+}
+#wrap main#dolRegist form section.detail-space > div .data-span {
+  width: 80px;
+}
+#wrap main#dolRegist form section.detail-space > div .react-datepicker-wrapper {
+  width: calc(100% - 160px);
+  height: 100%;
+}
+#wrap main#dolRegist form section.detail-space > div .react-datepicker-wrapper .react-datepicker__input-container {
+  width: 100%;
+  height: 100%;
+}
+#wrap main#dolRegist form section.detail-space > div .react-datepicker-wrapper .react-datepicker__input-container .datepicker {
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 20px;
+  padding: 0 20px 0 20px;
+}
+#wrap main#dolRegist form section.detail-space > div .date-pickBtn {
+  width: 80px;
+  border: none;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+}
+#wrap main#dolRegist form section.detail-space > div .date-pickBtn span {
+  font-size: 30px;
+}
+#wrap main#dolRegist form section.detail-space > div.date-detail {
+  display: flex;
+  justify-content: right;
+  padding-right: 0px;
+}
+#wrap main#dolRegist form section.detail-space > div.date-detail span {
+  padding: 0;
+}
+#wrap main#dolRegist form section.detail-space > div.date-detail select {
+  width: 81px;
+  font-size: 20px;
+  padding-left: 0;
+}
+#wrap main#dolRegist form section.detail-space > div.date-detail select:nth-of-type(3) {
+  margin-left: 10px;
+}
+#wrap main#dolRegist form section.detail-space > div.date-detail .react-time-picker__wrapper {
+  border: 1px solid lightgray;
+}
+#wrap main#dolRegist form section.detail-space > div.participant {
+  height: auto;
+}
+#wrap main#dolRegist form section.detail-space > div.participant > div {
+  width: calc(100% - 150px);
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#wrap main#dolRegist form section.detail-space > div.participant > div > div {
+  width: 50%;
+  font-size: 20px;
+  line-height: 40px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+#wrap main#dolRegist form section.detail-space > div.participant > div > div span {
+  font-size: 15px;
+  padding-left: 8px;
+}
+#wrap main#dolRegist form section.detail-space > div.spot span {
+  width: 70px;
+}
+#wrap main#dolRegist form section.detail-space > div.spot input {
+  width: calc(100% - 70px);
+}
+#wrap main#dolRegist form section.detail-space > div.connect span {
+  width: 110px;
+}
+#wrap main#dolRegist form section.detail-space > div.connect input {
+  width: calc(100% - 110px);
+}
+#wrap main#dolRegist form section.detail-space > div.private > span {
+  width: 100px;
+}
+#wrap main#dolRegist form section.detail-space > div.private .wrapper {
+  width: calc(100% - 100px);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+#wrap main#dolRegist form section.submit-space input[type=submit] {
+  background-color: cyan;
+  border: none;
+  box-shadow: 1px 2px 3px 0px;
+  width: calc(100% - 2px);
+  height: 50px;
+  font-size: 20px;
+  font-weight: 400;
+}
+#wrap main#dolRegist form section.submit-space input[type=submit]:hover {
+  background-color: lightskyblue;
+}
+#wrap main#dolRegist form section.submit-space input[type=submit]:active {
+  background-color: blue;
+}
+#wrap main#dolRegist form section.dol-remove {
+  padding: 15px 10px 10px 0;
+  text-align: right;
+}
+#wrap main#dolRegist form section.dol-remove button {
+  color: red;
+  font-size: 20px;
+}
+#wrap main#dolDetail {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  padding-bottom: 20px;
+}
+#wrap main#dolDetail section {
+  padding: 0px 15px;
+}
+#wrap main#dolDetail section > h2 {
+  padding-bottom: 5px;
+}
+#wrap main#dolDetail section.preview {
+  position: relative;
+}
+#wrap main#dolDetail section.preview > div {
+  padding: 20px 0;
+  display: flex;
+}
+#wrap main#dolDetail section.preview > div .dolImg {
+  width: 40%;
+  margin-right: 20px;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+#wrap main#dolDetail section.preview > div .dolImg img {
+  display: none;
+}
+#wrap main#dolDetail section.preview > div .dolComment {
+  width: 50%;
+}
+#wrap main#dolDetail section.preview .bookmark {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: red;
+  border: 1px solid red;
+  border-radius: 30px;
+  text-align: right;
+  padding: 3px;
+}
+#wrap main#dolDetail section.preview .bookmark label {
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+#wrap main#dolDetail section.preview .bookmark span {
+  font-size: 30px;
+}
+#wrap main#dolDetail section.preview .bookmark .fill {
+  font-variation-settings: "FILL" 1;
+}
+#wrap main#dolDetail section.preview .bookmark.active {
+  color: #fff;
+  background: red;
+}
+#wrap main#dolDetail section.paging {
+  padding-bottom: 20px;
+  position: relative;
+}
+#wrap main#dolDetail section.paging .page_wrap {
+  text-align: center;
+  font-size: 0;
+  padding-bottom: 10px;
+}
+#wrap main#dolDetail section.paging .page_wrap .none {
+  display: none;
+}
+#wrap main#dolDetail section.paging .page_wrap a {
+  display: inline-block;
+  margin: 0 3px;
+  border: 1px solid #e6e6e6;
+  width: 32px;
+  height: 32px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+@media all and (min-width: 550px) {
+  #wrap main#dolDetail section.paging .page_wrap a {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
+}
+#wrap main#dolDetail section.paging .page_wrap .arrow {
+  border: 1px solid #ccc;
+}
+#wrap main#dolDetail section.paging .page_wrap .pprev {
+  background: #f8f8f8 url("../images/arrow/page_pprev.png") no-repeat center center;
+  margin-left: 0;
+}
+#wrap main#dolDetail section.paging .page_wrap .prev {
+  background: #f8f8f8 url("../images/arrow/page_prev.png") no-repeat center center;
+  margin-right: 7px;
+  margin-left: 0;
+}
+#wrap main#dolDetail section.paging .page_wrap .next {
+  background: #f8f8f8 url("../images/arrow/page_next.png") no-repeat center center;
+  margin-left: 7px;
+  margin-right: 0;
+}
+#wrap main#dolDetail section.paging .page_wrap .nnext {
+  background: #f8f8f8 url("../images/arrow/page_nnext.png") no-repeat center center;
+  margin-right: 0;
+}
+#wrap main#dolDetail section.paging .page_wrap a.active {
+  background-color: #42454c;
+  color: #fff;
+  border: 1px solid #42454c;
+}
+#wrap main#dolDetail section.storeBtn {
+  padding: 10px 25px;
+}
+#wrap main#dolDetail section.storeBtn button,
+#wrap main#dolDetail section.storeBtn a {
+  display: inline-block;
+  padding: 10px;
+  font-family: "Noto Sans KR";
+  font-size: 20px;
+  font-weight: 500;
+  border: 1px solid black;
+  text-align: center;
+}
+#wrap main#dolDetail section.storeBtn button:first-child,
+#wrap main#dolDetail section.storeBtn a:first-child {
+  width: calc(60% - 20px);
+  height: 53px;
+}
+#wrap main#dolDetail section.storeBtn button:last-child,
+#wrap main#dolDetail section.storeBtn a:last-child {
+  margin-left: 20px;
+  height: 53px;
+  width: calc(40% - 10px);
+}
+#wrap main#dolDetail section.storeBtn button span,
+#wrap main#dolDetail section.storeBtn a span {
+  font-size: 30px;
+  padding-right: 5px;
+  line-height: 0px;
+}
+#wrap main#dolDetail section.storeBtn .apply {
+  width: 100% !important;
+  margin-left: 0 !important;
+}
+#wrap main#dolDetail section.placeUrl {
+  padding-top: 10px;
+}
+#wrap main#dolDetail section.keyword {
+  padding-top: 10px;
+}
+#wrap main#dolDetail section.keyword .btns {
+  padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#wrap main#dolDetail section.keyword .btns button {
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  border-radius: 15px;
+  font-family: "Noto Sans KR";
+  font-size: 15px;
+  border: 1px solid black;
+}
+#wrap main#dolDetail section.keyword .btns button:hover {
+  background: #ddd;
+}
+#wrap main#dolDetail section.team {
+  padding-top: 10px;
+}
+#wrap main#dolDetail section.team .teamFlex {
+  display: flex;
+  flex-wrap: wrap;
+}
+#wrap main#dolDetail section.team .teamFlex div {
+  width: 50%;
+}
+#wrap main#dolDetail section.team .teamFlex div .leader {
+  background-image: url("../images/free-icon-crown-6941697.png");
+  background-size: cover;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+#wrap main#dolDetail section.team .teamFlex div label {
+  width: 130px;
+  width: calc(100% - 85px);
+  display: inline-block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+#wrap main#dolDetail section.team .teamFlex div label.join {
+  width: calc(100% - 61px);
+}
+#wrap main#dolDetail section.fileSec {
+  padding-top: 10px;
+}
+#wrap main#dolDetail section.fileSec .fileFlex {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10px;
+}
+#wrap main#dolDetail section.fileSec .fileFlex div {
+  width: 50%;
+  padding-bottom: 5px;
+}
+#wrap main#dolDetail section.fileSec .uploadBtn {
+  text-align: right;
+}
+#wrap main#dolDetail section.fileSec .uploadBtn label {
+  display: inline-block;
+  color: #fff;
+  background: #333;
+  padding: 10px;
+  font-size: 15px;
+}
+#wrap main#dolDetail section.fileSec .uploadBtn input {
+  display: none;
+}
+#wrap main#dolDetail section.opinion-div {
+  padding-top: 10px;
+}
+#wrap main#dolDetail section.opinion-div h2 {
+  padding: 10px 0;
+}
+#wrap main#dolDetail section.opinion-div .opinion-view {
+  padding-top: 10px;
+  font-size: 18px;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+          user-select: text;
+}
+#wrap main#dolDetail section.opinion-div .opinion-view .opinion-wrap > div {
+  border-radius: 10px;
+  padding: 15px;
+  min-width: 230px;
+  max-width: calc(100% - 50px);
+  margin-bottom: 10px;
+  display: inline-block;
+}
+#wrap main#dolDetail section.opinion-div .opinion-view .opinion-wrap .my {
+  float: right;
+  background: #ffdd73;
+}
+#wrap main#dolDetail section.opinion-div .opinion-view .opinion-wrap .my p:nth-child(1) {
+  text-align: right;
+}
+#wrap main#dolDetail section.opinion-div .opinion-view .opinion-wrap .my p:nth-child(2) {
+  text-align: right;
+}
+#wrap main#dolDetail section.opinion-div .opinion-view .opinion-wrap .other {
+  background: #91ddeb;
+}
+#wrap main#dolDetail section.opinion-div .opinion-regist p {
+  padding: 0 10px 10px 10px;
+}
+#wrap main#dolDetail section.comment {
+  padding-top: 10px;
+}
+#wrap main#dolDetail section.comment h2 {
+  padding: 10px 0;
+}
+#wrap main#dolDetail section.comment .comment-view {
+  padding-top: 10px;
+  font-size: 18px;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+          user-select: text;
+}
+#wrap main#dolDetail section.comment .comment-view > div {
+  width: 100%;
+}
+#wrap main#dolDetail section.comment .comment-view > div > div {
+  border-radius: 10px;
+  padding: 15px;
+  min-width: 230px;
+  max-width: calc(100% - 50px);
+  margin-bottom: 10px;
+  display: inline-block;
+}
+#wrap main#dolDetail section.comment .comment-view > div .my {
+  float: right;
+  background: #ffe9a9;
+}
+#wrap main#dolDetail section.comment .comment-view > div .my p:nth-child(1) {
+  text-align: right;
+}
+#wrap main#dolDetail section.comment .comment-view > div .other {
+  border: 1px solid #cacaca;
+  background: #dfdfdf;
+}
+#wrap main#dolDetail .regist-form {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+#wrap main#dolDetail .regist-form textarea {
+  border: none;
+  width: 100%;
+  resize: none;
+  font-size: 20px;
+  padding: 20px 15px;
+  border-radius: 10px 10px 0 0;
+}
+#wrap main#dolDetail .regist-form .regist-btn {
+  border-top: 1px solid black;
+  padding: 10px 20px;
+  height: 60px;
+}
+#wrap main#dolDetail .regist-form .regist-btn button {
+  float: right;
+  border: none;
+  font-size: 20px;
+  padding: 5px 10px;
+}
+#wrap main#dolDetail .regist-form .regist-btn .onoffBtnDiv {
+  display: block;
+  width: 100px;
+  float: left;
+  padding-top: 10px;
+}
+#wrap main#dolView {
+  padding-bottom: 20px;
+}
+#wrap main#dolView section.cate {
+  width: 100%;
+  padding: 0 20px;
+}
+#wrap main#dolView section.cate h2 {
+  padding: 20px 0;
+  font-weight: 800;
+}
+#wrap main#dolView section.cate ol {
+  width: 100%;
+  padding-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#wrap main#dolView section.cate ol li {
+  width: 16.6666666667%;
+  padding: 0 5px;
+}
+#wrap main#dolView section.cate ol li div img {
+  border-radius: 50px;
+}
+#wrap main#dolView section.cate ol li h4 {
+  text-align: center;
+  font-size: 15px;
+}
+#wrap main#dolView section.cate ul.dol-list {
+  width: 100%;
+  position: relative;
+}
+#wrap main#dolView section.cate ul.dol-list li {
+  padding: 0 5px;
+  padding-bottom: 5px;
+}
+#wrap main#dolView section.cate ul.dol-list li a {
+  display: flex;
+}
+#wrap main#dolView section.cate ul.dol-list li a .dol-img {
+  width: 40%;
+  padding: 0 10px;
+}
+#wrap main#dolView section.cate ul.dol-list li a .dol-cont {
+  width: 70%;
+}
+#wrap main#dolView section.cate ul.dol-list li a .dol-cont h3 {
+  font-weight: 900;
+}
+#wrap main#dolView section.cate .dol-seeMore {
+  text-align: center;
+}
+#wrap main#dolView section.cate .dol-seeMore a {
+  font-size: 20px;
+  font-weight: 800;
+}
+#wrap main#dolView section.cate .dol-seeMore a hr {
+  font-weight: 900;
+  border: 1.5px solid black;
+  font-size: 30px;
+  margin: 10px 0;
+}
+#wrap main#dol-schedule {
+  padding-bottom: 20px;
+}
+#wrap main#dol-schedule section.calendar {
+  text-align: -webkit-center;
+  padding-bottom: 30px;
+}
+#wrap main#dol-schedule section.calendar .react-calendar {
+  width: calc(100% - 210px);
+  min-width: 370px;
+  max-width: 730px;
+  font-size: 16px;
+}
+@media all and (min-width: 500px) {
+  #wrap main#dol-schedule section.calendar .react-calendar {
+    font-size: 24px;
+  }
+}
+#wrap main#dol-schedule section.calendar .react-calendar .react-calendar__navigation {
+  margin: calc(5% - 20px) 0;
+}
+#wrap main#dol-schedule section.calendar .react-calendar .react-calendar__navigation button {
+  font-size: 0.8em;
+  min-width: calc(20% - 10px);
+}
+#wrap main#dol-schedule section.calendar .react-calendar .react-calendar__viewContainer {
+  font-size: 1em;
+}
+#wrap main#dol-schedule section.calendar .react-calendar .react-calendar__viewContainer .react-calendar__month-view__weekdays__weekday abbr {
+  text-decoration: none;
+}
+#wrap main#dol-schedule section.calendar .react-calendar .react-calendar__viewContainer .react-calendar__tile {
+  padding: 1.7% 6.6667px;
+}
+#wrap main#dol-schedule section.calendar .react-calendar .react-calendar__viewContainer .react-calendar__tile.react-calendar__tile--active {
+  background: #bce067;
+}
+#wrap main#dol-schedule section.calendar .react-calendar .react-calendar__viewContainer .react-calendar__tile.meetingDay {
+  position: relative;
+}
+#wrap main#dol-schedule section.calendar .react-calendar .react-calendar__viewContainer .react-calendar__tile.meetingDay abbr {
+  position: relative;
+  z-index: 10;
+  color: white;
+}
+#wrap main#dol-schedule section.calendar .react-calendar .react-calendar__viewContainer .react-calendar__tile.meetingDay span {
+  top: 0;
+  left: 8px;
+  width: calc(10% + 30px);
+  height: 100%;
+  position: absolute;
+  text-indent: -9999px;
+  background-color: rgb(244, 203, 102);
+  z-index: 9;
+  border-radius: 100%;
+}
+@media all and (min-width: 500px) {
+  #wrap main#dol-schedule section.calendar .react-calendar .react-calendar__viewContainer .react-calendar__tile.meetingDay span {
+    width: calc(25% + 30px);
+    left: calc(41.5% - 18px);
+  }
+}
+#wrap main#dol-schedule section.calendar .react-calendar .react-calendar__viewContainer .react-calendar__tile.meetingDay.bc-1 span {
+  background-color: rgba(244, 203, 102, 0.5);
+}
+#wrap main#dol-schedule section.calendar .react-calendar .react-calendar__viewContainer .react-calendar__tile.meetingDay.bc-2 span {
+  background-color: rgb(255, 178, 178);
+}
+#wrap main#dol-schedule section.calendar .react-calendar .react-calendar__viewContainer .react-calendar__tile.meetingDay.bc-3 span {
+  background-color: rgba(255, 178, 178, 0.5);
+}
+#wrap main#dol-schedule section.plan-info {
+  padding: 30px 20px 0 20px;
+}
+#wrap main#dol-schedule section.plan-info .title {
+  padding: 20px 0;
+}
+#wrap main#dol-schedule section.plan-info .meetinglist .meet > a {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+}
+#wrap main#dol-schedule section.plan-info .meetinglist .meet > a .meetImage {
+  width: 40%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+#wrap main#dol-schedule section.plan-info .meetinglist .meet > a .content {
+  width: 60%;
+  background-color: orange;
+  padding: 10px;
+}
+#wrap main#dol-schedule section.plan-info .meetinglist .meet > a .content span {
+  display: inline-block;
+}
+#wrap main#myPage-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#wrap main#myPage-main section {
+  padding: 20px;
+  border: 1px solid gray;
+}
+#wrap main#myPage-main section h2 {
+  padding: 10px 0px;
+  display: inline-block;
+}
+#wrap main#myPage-main section .btn {
+  display: inline-block;
+  height: 37.5px;
+  width: 120px;
+  padding: 0 10px;
+  background: #4b4b4b;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 42px;
+}
+#wrap main#myPage-main section .right {
+  float: right;
+}
+#wrap main#myPage-main section .info-div span {
+  display: inline-block;
+  width: 100%;
+  font-size: 16px;
+}
+#wrap main#myPage-main section .info-div p {
+  width: 100%;
+  font-size: 25px;
+  white-space: normal;
+}
+@media all and (min-width: 500px) {
+  #wrap main#myPage-main section .info-div span {
+    width: 30%;
+  }
+  #wrap main#myPage-main section .info-div p {
+    display: inline;
+    width: 70%;
+  }
+}
+#wrap main#notPage h2 {
+  text-align: center;
+}
+#wrap footer#footer {
+  width: 100%;
+  background: #d9d9d9;
+  padding-bottom: 36.1px;
+}
+#wrap footer#footer .f-space {
+  height: 50px;
+}
+#wrap footer#footer hr {
+  border: 1px solid #c5c5c5;
+}
+#wrap footer#footer .f-link {
+  padding: 20px 0px;
+  text-align: center;
+  color: #666666;
+}
+#wrap footer#footer .f-link label {
+  display: inline-block;
+  height: 5px;
+  line-height: 10px;
+  font-size: 1px;
+  padding: 0 10px;
+}
+#wrap footer#footer .f-link span {
+  font-weight: 600;
+}
+#wrap footer#footer .copyright {
+  text-align: center;
+}
+#wrap footer#footer h2 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  color: #666666;
+}
+
+/* 모달창 */
+.modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.modal .modal-background {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  z-index: 900;
+}
+.modal .modal-board {
+  position: absolute;
+  width: 100%;
+  max-width: 500px;
+  z-index: 901;
+}
+.modal .modal-board .modal-content {
+  height: 100%;
+  margin: 0 15px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  border: 0.1px solid #686868;
+  border-radius: 20px;
+}
+.modal .modal-board .modal-content .modal-title {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 15px 50px 15px 20px;
+}
+.modal .modal-board .modal-content .modal-con {
+  max-height: calc(100vh - 220px);
+  font-size: 14px;
+  width: 100%;
+  padding: 0 20px 30px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.modal .modal-board .modal-content .modal-btn_wrap {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.modal .modal-board .modal-content .modal-btn_wrap .modal_close {
+  background: url("../images/ico_close_40x40.png") no-repeat 0 0;
+  width: 16px;
+  height: 16px;
+  font-size: 0;
+  background-size: 100% auto;
+  vertical-align: top;
+}
+.modal .modal-board .modal-content .modal-confirm {
+  padding-right: 10px;
+  text-align: right;
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+}
+.modal .modal-board .modal-content .modal-confirm button {
+  width: 60px;
+  height: 40px;
+}
+.modal .modal-board .modal-content .modal-confirm button:hover {
+  box-shadow: 1px 1px 4px black;
+}
+.modal .modal-board .modal-content .modal-confirm button:active {
+  box-shadow: none;
+  background-color: #e1e1e1;
+}
+.modal .modal-board .modal-content .modal-confirm span {
+  margin-left: 2px;
+}
+.modal .modal-board .modal-content .interest-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0 20px 10px;
+}
+.modal .modal-board .modal-content .interest-wrap .modal-interest {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.modal .modal-board .modal-content .interest-wrap .modal-interest .category {
+  display: inline-block;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  width: 50%;
+  max-width: 180px;
+  min-width: 150px;
+}
+.modal .modal-board .modal-content .interest-wrap .modal-interest .category .txt {
+  display: inline-block;
+  width: calc(100% - 30px);
+}
+.modal .modal-board .modal-content .interest-wrap .modal-interest .category label {
+  font-size: 20px;
+}
+.modal .modal-board .modal-content .interest-wrap .modal-interest .category label:first-child {
+  padding-right: 5px;
+}
+.modal .modal-board .modal-content .interest-wrap .modal-interest .category input[type=checkbox] {
+  display: none;
+}
+.modal .modal-board .modal-content .interest-wrap .modal-interest .category input[type=checkbox] + label {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 3px solid #707070;
+  position: relative;
+}
+.modal .modal-board .modal-content .interest-wrap .modal-interest .category input.checked + label::after {
+  content: "✔";
+  font-size: 25px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: -5px;
+}
+.modal .modal-board .modal-content .store-btn {
+  padding: 0 20px 40px;
+  text-align: right;
+}
+.modal .modal-board .modal-content .store-btn button {
+  display: inline-block;
+  height: 40px;
+  width: 150px;
+  padding: 0 10px;
+  background: #4b4b4b;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 42px;
+}
+.modal.active .modal-board {
+  animation-duration: 0.4s;
+  animation-fill-mode: both;
+  animation-name: fadeInToCenter;
+}
+.modal.delay .modal-board {
+  animation-duration: 0.35s;
+  animation-name: fadeOutToBottom;
+}
+
+@keyframes fadeOutToBottom {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+  55% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(101%);
+  }
+}
+@keyframes fadeInToCenter {
+  0% {
+    opacity: 0;
+    transform: translateY(101%);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* 슬라이드 전용 */
+.slide-setting {
+  position: relative;
+  overflow: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.slide-setting ul {
+  position: relative;
+  display: flex;
+}
+.slide-setting ul li {
+  width: 100%;
+}
+
+/* on/off 버튼 */
+.onoffBtnDiv {
+  /* checking style */
+  /* move */
+}
+.onoffBtnDiv .onf_checkbox {
+  position: absolute;
+  /* hidden */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.onoffBtnDiv .switch_label {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  width: 58px;
+  height: 28px;
+  background: #fff;
+  border: 2px solid #daa;
+  border-radius: 20px;
+  transition: 0.2s;
+}
+.onoffBtnDiv .switch_label:hover {
+  background: #efefef;
+}
+.onoffBtnDiv .onf_btn {
+  position: absolute;
+  top: 2.5px;
+  left: 3px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background: #daa;
+  transition: 0.2s;
+}
+.onoffBtnDiv .onf_txt {
+  position: absolute;
+  top: -5px;
+  left: 67px;
+  font-size: 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  width: 100px;
+}
+.onoffBtnDiv .onf_checkbox:checked + .switch_label {
+  background: rgb(128, 197, 128);
+  border: 2px solid rgb(133, 190, 133);
+}
+.onoffBtnDiv .onf_checkbox:checked + .switch_label:hover {
+  background: rgb(103, 158, 103);
+}
+.onoffBtnDiv .onf_checkbox:checked + .switch_label .onf_btn {
+  left: 34px;
+  background: #fff;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1254901961);
+}

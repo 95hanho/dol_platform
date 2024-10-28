@@ -1,0 +1,88 @@
+// PC -----------------------------------------------------------------
+@media all and (min-width: 1024px) {
+  #wrap {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    #header.login-on {
+      position: absolute;
+      width: calc(100% - 300px);
+      .headLeft {
+        display: none;
+      }
+      .headRight {
+        width: 100%;
+        .home-btn {
+          position: absolute;
+          left: 10px;
+          height: auto;
+        }
+        .menu-btn {
+          display: none;
+        }
+      }
+      .searchspace {
+        padding: 0;
+        padding-left: 10px;
+        .hashTag {
+          display: block;
+        }
+      }
+    }
+    nav#main-menu {
+      position: absolute;
+      width: 300px;
+      min-width: auto;
+      left: calc(100% - 300px);
+      color: #fff;
+      transition: none;
+      header {
+        display: none;
+      }
+      section {
+        display: block;
+        height: calc(100% - 30px);
+        background: #444;
+        margin: 15px;
+        aside {
+          width: 100%;
+          height: auto;
+          padding: 50px 0;
+        }
+        article {
+          width: 100%;
+          overflow: auto;
+          h2 {
+            padding: 10px 15px;
+            span {
+              display: inline;
+            }
+          }
+          ul li a {
+            padding: 0 20px;
+          }
+        }
+        .module-btn {
+          bottom: 15px;
+        }
+        a {
+          color: #fff;
+        }
+      }
+    }
+    &.menu_on nav#main-menu {
+      left: calc(100% - 300px);
+    }
+    main {
+      width: calc(100% - 300px);
+      padding-top: 175px;
+    }
+    main#login-main.myPage-change {
+      width: calc(100% - 300px);
+      padding-top: 170px;
+    }
+    footer#footer.login-on {
+      width: calc(100% - 300px);
+    }
+  }
+}
